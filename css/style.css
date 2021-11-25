@@ -1,0 +1,76 @@
+html {
+overflow: hidden;
+height: 100%;
+background: #cacaca;
+font-family: arial, sans-serif;
+font-size: 16px;
+}
+
+body {
+overflow: auto;
+height: 100%;
+/*width: 1000px;
+margin: 0 auto; /* center */
+padding: 0 20px;
+border: 1px solid black; border-width: 0 1px;
+background: #eee;
+}
+
+#topHeader {
+background: #c72;
+padding: 5px;
+}
+
+#topNavigation {
+
+}
+
+#topNavigation ul {
+	
+}
+
+#topNavigation li {
+list-style-type: none;	/* This removes the bullet points next to the list items */
+float: left;		 /* This tells the list item to float left rather than sit vertically */
+}
+
+#topNavigation li a {
+padding: 5px;
+margin: 2px;
+text-decoration: none;
+}
+.current {
+background: #222;	/* This colours the background */
+color: #fff;		/* This colours the text */
+}
+
+.notCurrent {
+background: #888;	/* This colours the background */
+color: #fff;		/* This colours the text */
+}
+
+.container {
+margin:0 auto;		/* This tells the container to position itself in the center of html area */
+text-align:left;		/* This tells the teaxt to align to the left */
+width: 100%;		/* this tells the container to be the full width of it's area */
+clear: left;
+}
+
+#mainContent {
+width: 70%;
+float: left;
+}
+
+#sidebar {
+width: 25%;	/* This sets the width of the id */
+float: right;	/* This tells the id to float right */
+background: #ccaf93;
+padding: 0em 0.5em 0em 0.5em;
+}
+
+#mainFooter {
+background: #222;
+color: #fff;
+padding: 5px;
+clear: both;	/* This tells the id to clear away floats away so that they don't affect it */
+}
