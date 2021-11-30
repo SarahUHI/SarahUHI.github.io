@@ -21,32 +21,8 @@ background: #c72;
 padding: 5px;
 }
 
-#topNavigation {
-
-}
-
-#topNavigation ul {
-	
-}
-
-#topNavigation li {
-list-style-type: none;	/* This removes the bullet points next to the list items */
-float: left;		 /* This tells the list item to float left rather than sit vertically */
-}
-
-#topNavigation li a {
-padding: 5px;
-margin: 2px;
-text-decoration: none;
-}
-.current {
-background: #222;	/* This colours the background */
-color: #fff;		/* This colours the text */
-}
-
-.notCurrent {
-background: #888;	/* This colours the background */
-color: #fff;		/* This colours the text */
+.eMail {
+  color: #222;
 }
 
 .container {
@@ -79,7 +55,7 @@ clear: both;	/* This tells the id to clear away floats away so that they don't a
     display: grid;
   }
 
-  .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+.navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
     color: #9d9d9d;
     background-color: transparent;
 }
