@@ -74,3 +74,12 @@ color: #fff;
 padding: 5px;
 clear: both;	/* This tells the id to clear away floats away so that they don't affect it */
 }
+
+.grid-container {
+    display: grid;
+  }
+
+  .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
+    color: #9d9d9d;
+    background-color: transparent;
+}
