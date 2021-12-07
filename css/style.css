@@ -3,59 +3,110 @@ overflow: hidden;
 height: 100%;
 background: #cacaca;
 font-family: arial, sans-serif;
-font-size: 16px;
+font-size: 1em;
 }
 
 body {
 overflow: auto;
 height: 100%;
-/*width: 1000px;
-margin: 0 auto; /* center */
-padding: 0 20px;
-border: 1px solid black; border-width: 0 1px;
+margin: 0 auto;
 background: #eee;
 }
 
-#topHeader {
-background: #c72;
-padding: 5px;
+p {
+  color: blanchedalmond;
 }
 
-.eMail {
-  color: #222;
+h1 {
+  color: blanchedalmond;
 }
 
-.container {
-margin:0 auto;		/* This tells the container to position itself in the center of html area */
-text-align:left;		/* This tells the teaxt to align to the left */
-width: 100%;		/* this tells the container to be the full width of it's area */
-clear: left;
+a.eMail {
+  color:aquamarine ;
 }
 
-#mainContent {
-width: 70%;
-float: left;
-}
-
-#sidebar {
-width: 25%;	/* This sets the width of the id */
-float: right;	/* This tells the id to float right */
-background: #ccaf93;
-padding: 0em 0.5em 0em 0.5em;
-}
-
-#mainFooter {
-background: #222;
-color: #fff;
-padding: 5px;
-clear: both;	/* This tells the id to clear away floats away so that they don't affect it */
-}
-
-.grid-container {
+@media all and (max-width:360px)
+{
+  .topHeader {
+    background: #37508B;
+    padding: 5px;
     display: grid;
+    grid-template-columns: max-content;
+    grid-template-rows: max-content;
+    }
+    
+    .logo {
+      grid-column: 1 / span 2;
+      grid-row: 1 / span 1;
+    }
+    
+    .bizName {      
+      grid-column: 1 / span 1;
+      grid-row: 2 / span 2      
+    }
+
+    h1 {
+      font-size: 2rem;
+      word-wrap: break-word;
+    }
+}
+
+@media (min-width: 361px) and (max-width: 900px) {
+body {
+  min-width: 361px;
+  max-width: 768px;
+}
+.topHeader {
+background: #37508B;
+padding: 5px;
+display: grid;
+grid-template-columns: 117px 1fr;
+grid-template-rows: max-content;
+}
+
+.logo {
+  grid-column: 1 / span 2;
+  grid-row: 1 / span 1;
+}
+
+.bizName {
+  padding-left: 10px;
+  grid-column: 2 / span 1;
+  grid-row: 1 / span 2
+}
+}
+
+@media (min-width: 901px) {
+  body {
+    min-width: 900px;
+    max-width: 1024px;
   }
+  .topHeader {
+    background: #37508B;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 117px 1fr;
+    grid-template-rows: max-content;
+    }
+}
 
 .navbar-inverse .navbar-brand:focus, .navbar-inverse .navbar-brand:hover {
     color: #9d9d9d;
     background-color: transparent;
 }
+
+/* .grid-container {
+  display: grid;
+  grid-gap: 50px 100px;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+} */
