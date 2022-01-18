@@ -14,6 +14,20 @@ background: #eee;
 min-width:325px;
 }
 
+.topHeader {
+    background: #37508B;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 130px 1fr;
+    grid-template-rows: 110px 110px;
+    height: 220px;
+}
+
+.logo {
+    grid-area: 1 / 1 / 2 / 1;
+}
+
+
 p {
   color: blanchedalmond;
 }
@@ -31,18 +45,6 @@ a.eMail {
 }
 
     @media all and (max-width:425px) {
-        .topHeader {
-            background: #37508B;
-            padding: 5px;
-            display: grid;
-            grid-template-columns: 130px 1fr;
-            grid-template-rows: 110px 110px;
-            height: 220px;
-        }
-
-        .logo {
-            grid-area: 1 / 1 / 2 / 1;
-        }
 
         h1.bizName {
             font-size: 20px;
@@ -66,6 +68,23 @@ a.eMail {
             grid-template-columns: max-content;
         }
 
+        img.spec1 {
+            max-width: 100%;
+            content:url("../images/2015_Cannondale_Trigger_Team_XC_425_319.jpg");
+            object-fit: contain;
+        }
+
+        img.spec2 {
+            max-width: 100%;
+            content: url("../images/SpecializedBigHit2_425_319.jpg");
+            object-fit: contain;
+        }
+
+        img.spec3 {
+            max-width: 100%;
+            content: url("../images/Giant_TCX_Cyclocross_425_319.jpg");
+            object-fit: contain;
+        }
         .item1 {
             grid-area: 1 / 1 / span 1 / span 1;
         }
@@ -96,19 +115,6 @@ a.eMail {
             min-width: 426px;
         }
 
-        .topHeader {
-            background: #37508B;
-            padding: 5px;
-            display: grid;
-            grid-template-columns: 130px 1fr;
-            grid-template-rows: 110px 110px;
-            height: 220px;
-        }
-
-        .logo {
-            grid-area: 1 / 1 / 2 / 1;
-        }
-
         h1.bizName {
             align-self: center;
             font-size: 24px;
@@ -125,25 +131,39 @@ a.eMail {
             font-size: 18px;
             align-self: center;
         }
+
+        .specials {
+            display: grid;
+            grid-template-rows: max-content;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img.spec1 {
+            max-width: 100%;
+            content: url("../images/2015_Cannondale_Trigger_Team_XC_300_225.jpg");
+            object-fit: contain;
+            grid-area: 2 / 1 / 2 / 1; 
+        }
+
+        img.spec2 {
+            max-width: 100%;
+            content: url("../images/SpecializedBigHit2_300_225.jpg");
+            object-fit: contain;
+            grid-area: 2 / 2 / 2 / 2;
+        }
+
+        img.spec3 {
+            max-width: 100%;
+            content: url("../images/Giant_TCX_Cyclocross_300_225.jpg");
+            object-fit: contain;
+            grid-area: 2 / 3 / 2 / 3;
+        }
     }
 
     @media (min-width: 901px) {
         body {
             min-width: 900px;
             max-width: 1024px;
-        }
-
-        .topHeader {
-            background: #37508B;
-            padding: 5px;
-            display: grid;
-            grid-template-columns: 130px 1fr;
-            grid-template-rows: 110px 110px;
-            height: 220px;
-        }
-
-        .logo {
-            grid-area: 1 / 1 / 2 / 1;
         }
 
         h1.bizName {
@@ -161,5 +181,32 @@ a.eMail {
             grid-area: 2 / 2 / 2 / 2;
             font-size: 18px;
             align-self: center;
+        }
+
+        .specials {
+            display: grid;
+            grid-template-rows: max-content;
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
+        img.spec1 {
+            max-width: 100%;
+            content: url("../images/2015_Cannondale_Trigger_Team_XC_341_256.jpg");
+            object-fit: contain;
+            grid-area: 2 / 1 / 2 / 1;
+        }
+
+        img.spec2 {
+            max-width: 100%;
+            content: url("../images/SpecializedBigHit2_341_256.jpg");
+            object-fit: contain;
+            grid-area: 2 / 2 / 2 / 2;
+        }
+
+        img.spec3 {
+            max-width: 100%;
+            content: url("../images/Giant_TCX_Cyclocross_341_256.jpg");
+            object-fit: contain;
+            grid-area: 2 / 3 / 2 / 3;
         }
     }
