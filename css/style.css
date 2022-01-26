@@ -4,6 +4,7 @@ height: 100%;
 background: #cacaca;
 font-family: arial, sans-serif;
 font-size: 1em;
+min-width:425px;
 }
 
 body {
@@ -85,29 +86,7 @@ a.eMail {
             content: url("../images/Giant_TCX_Cyclocross_425_319.jpg");
             object-fit: contain;
         }
-        .item1 {
-            grid-area: 1 / 1 / span 1 / span 1;
-        }
-
-        p.item1 {
-            color: black;
-        }
-
-        .item2 {
-            grid-area: 2 / 1 / span 1 / span 1;
-        }
-
-        p.item2 {
-            color: black;
-        }
-
-        .item3 {
-            grid-area: 3 / 1 / span 1 / span 1;
-        }
-
-        p.item3 {
-            color: black;
-        }
+  
     }
 
     @media (min-width: 426px) and (max-width: 900px) {
