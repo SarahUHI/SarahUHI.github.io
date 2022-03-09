@@ -8,11 +8,11 @@ min-width:425px;
 }
 
 body {
-overflow: auto;
-height: 100%;
-margin: 0 auto;
-background: #eee;
-min-width:325px;
+    overflow: auto;
+    height: 100%;
+    margin: 0 auto;
+    background: #8B7237;
+    min-width: 325px;
 }
 
 .topHeader {
@@ -37,12 +37,20 @@ h1 {
   color: blanchedalmond;
 }
 
+nav {
+    background: #59CF68;
+}
+
 a.eMail {
   color:aquamarine ;
 }
 
 .specials {
     background: #8B7237;
+}
+
+.specHeader {
+    color: blanchedalmond;
 }
 
     @media all and (max-width:425px) {
